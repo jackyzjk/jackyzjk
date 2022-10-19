@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>易云双芯 | 设备搜索工具DNST</title>
+    <meta name="description" content="支持对华路易云信号机进行设备激活、网络设置、重置密码以及设备登录 ">
+    <link rel="canonical" href="https://jackyzjk.github.io/posts/%E8%AE%BE%E5%A4%87%E6%90%9C%E7%B4%A2%E5%B7%A5%E5%85%B7dnst/" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta property="og:title" content="设备搜索工具DNST" />
+<meta property="og:description" content="支持对华路易云信号机进行设备激活、网络设置、重置密码以及设备登录" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jackyzjk.github.io/posts/%E8%AE%BE%E5%A4%87%E6%90%9C%E7%B4%A2%E5%B7%A5%E5%85%B7dnst/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-10-19T13:08:25+08:00" />
+<meta property="article:modified_time" content="2022-10-19T13:08:25+08:00" />
+
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="设备搜索工具DNST"/>
+<meta name="twitter:description" content="支持对华路易云信号机进行设备激活、网络设置、重置密码以及设备登录"/>
+
+    
+        
+    
+    <link rel="stylesheet" href='/css/style.css' />
+    <link rel="stylesheet" href='/css/search.css' />
+    <link rel="stylesheet" href='/css/list.css' />
+    <link rel="stylesheet" href='/css/terms.css' />
+    <link rel="stylesheet" href='/css/taxonomy.css' />
+    <link rel="stylesheet" href='/css/home.css' />
+    <link rel="stylesheet" href='/css/syntax.css' />
+    
+    <link rel="stylesheet" href='/css/shortcode.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href='/css/_custom.css' />
+    <style>
+         
+    </style>
+    
+    
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [["$", "$"]],
+      },
+      displayMath: [
+        ["$$", "$$"],
+        ["\[\[", "\]\]"],
+      ],
+      svg: {
+        fontCache: "global",
+      },
+    };
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+    id="MathJax-script"
+    async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  ></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script src="/js/lazysizes.min.js" async=""></script>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/search.js"></script>
+    <script src="/js/yes.js"></script>
+    
+</head><body style="font-family: ,'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Heiti SC', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;">
+        <div class="loading">
+            <div class="loading-bg"></div>
+            <div class="loading-long">
+                <div class="loading-short"></div>
+            </div>
+        </div>
+
+        <header>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="/">
+                <span class="logo">易云双芯</span>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <a href="/">
+                <div class="menu-item">
+                    <div class="hengtiao-root">
+                        <div class="hengtiao"></div>
+                        <div class="name text-wbd-reverse"><i class='fa fa-home'></i> 主页</div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/posts">
+                <div class="menu-item">
+                    <div class="hengtiao-root">
+                        <div class="hengtiao"></div>
+                        <div class="name text-wbd-reverse"><i class='fa fa-book'></i> 升级日志</div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/posts/%E8%AE%BE%E5%A4%87%E6%90%9C%E7%B4%A2%E5%B7%A5%E5%85%B7dnst/">
+                <div class="menu-item">
+                    <div class="hengtiao-root">
+                        <div class="hengtiao"></div>
+                        <div class="name text-wbd-reverse"><i class='fa fa-search-plus'></i> 设备搜索工具</div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/about">
+                <div class="menu-item">
+                    <div class="hengtiao-root">
+                        <div class="hengtiao"></div>
+                        <div class="name text-wbd-reverse"><i class='fa fa-info-circle'></i> 关于</div>
+                    </div>
+                </div>
+            </a>
+            
+            <div class="navbar-burger">
+                <div class="burger-btn"><span><i class="fa fa-navicon"></i></span></div>
+            </div>
+            
+            
+            <div class="search-in"><span><i class="fa fa-search"></i></span></div>
+            <div class="mode">
+                <span class="sun"><i class="fa fa-sun-o"></i></span>
+                <span class="moon"><i class="fa fa-moon-o"></i></span>
+            </div>
+            
+        </div>
+    </nav>
+    <div class="burger-items">
+        
+        <a href="/">
+            <div class="burger-item">
+                <i class='fa fa-home'></i> 主页
+            </div>
+        </a>
+        
+        <a href="/posts">
+            <div class="burger-item">
+                <i class='fa fa-book'></i> 升级日志
+            </div>
+        </a>
+        
+        <a href="/posts/%E8%AE%BE%E5%A4%87%E6%90%9C%E7%B4%A2%E5%B7%A5%E5%85%B7dnst/">
+            <div class="burger-item">
+                <i class='fa fa-search-plus'></i> 设备搜索工具
+            </div>
+        </a>
+        
+        <a href="/about">
+            <div class="burger-item">
+                <i class='fa fa-info-circle'></i> 关于
+            </div>
+        </a>
+        
+    </div>
+    <div class="header-rest"></div>
+</header>
+
+
+        <div id="content">
+
+
+
+
+
+
+
+
+    <div class="hero">
+        
+            <div class="hero-img">
+                <img src="/images/bg.png" alt="">
+            </div>
+        
+        <div class="hero-content">
+            <div class="hero-title">设备搜索工具DNST</div>
+            <div class="hero-subtitle"></div>
+            <div class="hero-date">
+                    <span class="no-wrap"><i class="fa fa-calendar"></i> : 2022-10-19 &nbsp;</span>
+                    <span class="no-wrap"><i class="fa fa-calendar-check-o"></i> : 2022-10-19 &nbsp;</span>
+                    <span class="no-wrap"><i class="fa fa-folder"></i>
+                        
+                        
+                    </span>    
+            </div>
+            <div class="timelong">
+                <span class="no-wrap"><i class="fa fa-pencil"></i> : 321 &nbsp;</span>
+                <span class="no-wrap"><i class="fa fa-clock-o"></i> : 1  &nbsp;</span>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+<div class="zhuti-0">
+    <div class="container">
+        <div class="zhuti">
+            <div class="zhuti-l">
+                
+
+
+
+    
+
+
+<div class="content-root">
+    <div class="long">
+        <button class="tosides-1 text-wbd">
+            <i class="fa fa-arrow-right"></i>
+        </button>
+        <button class="tosides-2 text-wbd">
+            <i class="fa fa-arrow-left"></i>
+        </button>
+        <button class="toup text-wbd">
+            <i class="fa fa-arrow-up"></i>
+        </button>
+    </div>
+    
+        <div class="content">
+            <div class="content-self">
+                <p><a href="/upk/dnst-v1.1.0.zip" download><i class='fa fa-download'><span class="label label-default" style="background-color: #34495e;">v1.1.0下载</span></i></a></p>
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+        
+        
+    
+
+
+
+
+    
+
+
+<div class="note tip-box">
+    <div class="note-header">
+        <div>
+            <i class="fa fa-lightbulb-o"></i>
+            <span class="title-note">功能介绍</span>
+        </div>
+        <div>
+            <span><i class="fa fa-angle-down"></i></span>
+        </div>
+    </div>
+    <div class="note-content tip-content ">
+        
+<ul>
+<li>可以对华路易云信号机进行设备激活，即设置初始密码</li>
+<li>可以搜索所有局域网内在线的华路易云信号机</li>
+<li>可以对信号机进行网络配置、密码修改、重置密码以及设备登录</li>
+<li>可以登录到信号机进行参数配置以及升级信号机</li>
+</ul>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+        
+        
+    
+
+
+
+
+     
+
+
+<div class="note warning-box">
+    <div class="note-header">
+        <div>
+            <i class="fa fa-exclamation-circle"></i>
+            <span class="title-note">注意事项</span>
+        </div>
+        <div>
+            <span><i class="fa fa-angle-down"></i></span>
+        </div>
+    </div>
+    <div class="note-content warning-content ">
+        
+<ul>
+<li>win7以及老版本的win10用户首次启动可能需要安装webview2运行时，此工具会自动引导安装，如果安装失败可以手动下载安装<a href="https://cowtransfer.com/s/b45b2e9c29dd4e" target=_blank>webview2运行时</a></li>
+<li>另外此工具用到组播协议，若网卡未有开启或安装组播协议，请参见<a href="https://jingyan.baidu.com/article/afd8f4debfacf634e386e953.html" target=_blank>win7组播协议安装</a>、 <a href="https://jingyan.baidu.com/article/4853e1e52cd33f5808f7261b.html" target=_blank>win10组播协议安装</a> ，若安装了组播协议未开启只需要在网卡属性中把<b>可靠多播协议</b>勾选然后确定即可</li>
+<li>最好使用管理员权限打开，尤其是win7用户</li>
+<li>win7用户如果搜索不到设备，可参考<a href="https://blog.csdn.net/yxljl1314/article/details/11211267" target=_blank>此链接</a>尝试修改注册表</li>
+</ul>
+
+    </div>
+</div>
+
+            </div>
+            
+                <div class="tags">
+                    
+                </div>
+            
+        </div>
+        
+            
+                <div class="pre-next">
+                    
+    
+        
+        <a href="https://jackyzjk.github.io/posts/v1.1.4%E5%8F%91%E5%B8%83/" class="pre pre-last" style="text-align: center;">
+            <span class="pre-icon"><i class="fa fa-hand-o-left"></i></span>
+            <div class="pre-title-root">
+                <span>V1.1.4发布</span>
+            </div>
+        </a>
+        
+    
+    
+
+                </div>
+            
+        
+    
+</div>
+
+    
+
+
+            </div>
+            <div class="zhuti-r">
+                
+<div class="zhuti-r-0">
+    <div class="zhuti-r-1">
+        
+        <div id="r1">
+            <div class="about-zuozhe">
+    <div class="zuozhe">
+        
+            <div class="datou">
+                <img src="/images/logo.png" alt="">
+            </div>
+        
+        <div class="name-jianjie">
+            <div class="name">Jicky</div>
+            <div class="jianjie">
+                华路易云科技有限公司
+            </div>
+        </div>
+    </div>
+
+    <div class="type">
+        <a href='/zh/posts' class="wenzhang">
+            <p>
+                
+                    
+                
+            </p>
+            <p>2</p>
+        </a>
+        <a href='/zh/categories' class="fenlei">
+            <p></p>
+            <p>0</p>
+        </a>
+        <a href='/zh/tags' class="biaoqian">
+            <p></p>
+            <p>0</p>
+        </a>
+    </div>
+
+    <a href="http://www.hualuyiyun.net/">
+        <div class="follow">Follow Me</div>
+    </a>
+    <div class="link">
+        
+    </div>
+</div>
+            <div class="mulu">
+    <div class="dong"></div>
+    <div class="zhi">
+        <div class="wenzi">
+            <div class="zhi-mulu text-wbd"></div>
+            <div class="mulu-items">
+            </div>
+        </div>
+    </div>
+</div>
+            
+
+
+
+    
+    
+
+
+<div class="other">
+    <div class="other-up">
+        <div class="other-qita text-wbd"></div>
+        <div class="xian"></div>
+    </div>
+    <div class="list">
+        
+            <a href="https://jackyzjk.github.io/posts/v1.1.4%E5%8F%91%E5%B8%83/" class="">
+                
+<a href="https://jackyzjk.github.io/posts/v1.1.4%E5%8F%91%E5%B8%83/">
+    <div class="list-item">
+        <div class="icon-other-root">
+            
+                <div class="icon-other" style="background-image: url( /images/bg.png );"></div>
+            
+        </div>
+        <div class="list-right">
+            <div class="other-title">
+                V1.1.4发布
+            </div>
+            <div class="other-summary">1.修复了订阅历史方案会导致websocket断开的问题<br/>2.优化了相位跳转到过渡期以及相位截断的执行逻辑</div>
+            <div class="other-date">2022-10-18</div>
+        </div>
+    </div>
+</a>
+            </a>
+        
+    </div>
+</div>
+        </div>
+        <div id="r2">
+            
+        </div> 
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+
+        <footer class="footer">
+    
+        <div class="container">
+            <div class="footer-items">
+                
+                
+                    <div class="footer-item">
+                        © 2022-2022 <a href="http://www.hualuyiyun.net/">Jicky</a>
+                    </div>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</footer>
+
+
+        
+        <div class="search-root">
+    <div class="search-zz"></div>
+    <div class="search">
+        <div class="sheader anniu">
+            <div class="sh-l">
+                <input type="text" placeholder='' id="search-key">
+                <span class="sclear"><i class="fa fa-close"></i></span>
+            </div>
+            <div class="sh-r">
+                <button></button>
+            </div>
+        </div>
+        <div class="sbody">
+            <div class="sbody-1">
+                <div class="stip"></div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+
+
+
+
+    
+    
+
+    
+    
+
+
+<script type="text/javascript">
+    var postsCount =  2 ;
+    var arrPosts = [{"link":"https://jackyzjk.github.io/posts/%E8%AE%BE%E5%A4%87%E6%90%9C%E7%B4%A2%E5%B7%A5%E5%85%B7dnst/","plain":"v1.1.0下载\n功能介绍 可以对华路易云信号机进行设备激活，即设置初始密码 可以搜索所有局域网内在线的华路易云信号机 可以对信号机进行网络配置、密码修改、重置密码以及设备登录 可以登录到信号机进行参数配置以及升级信号机 注意事项 win7以及老版本的win10用户首次启动可能需要安装webview2运行时，此工具会自动引导安装，如果安装失败可以手动下载安装webview2运行时 另外此工具用到组播协议，若网卡未有开启或安装组播协议，请参见win7组播协议安装、 win10组播协议安装 ，若安装了组播协议未开启只需要在网卡属性中把可靠多播协议勾选然后确定即可 最好使用管理员权限打开，尤其是win7用户 win7用户如果搜索不到设备，可参考此链接尝试修改注册表 ","pubDate":"2022-10-19","title":"设备搜索工具DNST"},{"link":"https://jackyzjk.github.io/posts/v1.1.4%E5%8F%91%E5%B8%83/","plain":"ECS600升级包 ECS300升级包\n优化 检测器配置新增了检测器ip不能重复配置的判断 优化了相位跳转到过渡期以及相位截断的执行逻辑 修复 修复了订阅历史方案会导致订阅连接断开的问题 新增 无 删除 无 ","pubDate":"2022-10-18","title":"V1.1.4发布"}];
+</script>
+
+
+
+
+
+    </body>
+</html>
+
