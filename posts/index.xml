@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 易云双芯</title>
-    <link>https://jackyzjk.github.io/posts/</link>
+    <link>https://yyits.top/posts/</link>
     <description>Recent content in Posts on 易云双芯</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Oct 2022 13:08:25 +0800</lastBuildDate><atom:link href="https://jackyzjk.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Oct 2022 13:08:25 +0800</lastBuildDate><atom:link href="https://yyits.top/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>设备搜索工具DNST</title>
-      <link>https://jackyzjk.github.io/posts/%E8%AE%BE%E5%A4%87%E6%90%9C%E7%B4%A2%E5%B7%A5%E5%85%B7dnst/</link>
+      <link>https://yyits.top/posts/%E8%AE%BE%E5%A4%87%E6%90%9C%E7%B4%A2%E5%B7%A5%E5%85%B7dnst/</link>
       <pubDate>Wed, 19 Oct 2022 13:08:25 +0800</pubDate>
       
-      <guid>https://jackyzjk.github.io/posts/%E8%AE%BE%E5%A4%87%E6%90%9C%E7%B4%A2%E5%B7%A5%E5%85%B7dnst/</guid>
+      <guid>https://yyits.top/posts/%E8%AE%BE%E5%A4%87%E6%90%9C%E7%B4%A2%E5%B7%A5%E5%85%B7dnst/</guid>
       <description>支持对华路易云信号机进行设备激活、网络设置、重置密码以及设备登录</description>
     </item>
     
     <item>
       <title>V1.1.4发布</title>
-      <link>https://jackyzjk.github.io/posts/v1.1.4%E5%8F%91%E5%B8%83/</link>
+      <link>https://yyits.top/posts/v1.1.4%E5%8F%91%E5%B8%83/</link>
       <pubDate>Tue, 18 Oct 2022 21:53:32 +0800</pubDate>
       
-      <guid>https://jackyzjk.github.io/posts/v1.1.4%E5%8F%91%E5%B8%83/</guid>
+      <guid>https://yyits.top/posts/v1.1.4%E5%8F%91%E5%B8%83/</guid>
       <description>1.修复了订阅历史方案会导致websocket断开的问题&lt;br/&gt;2.优化了相位跳转到过渡期以及相位截断的执行逻辑</description>
     </item>
     
