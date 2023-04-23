@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>升级包 on 易云双芯</title>
+    <link>https://yyits.top/categories/%E5%8D%87%E7%BA%A7%E5%8C%85/</link>
+    <description>Recent content in 升级包 on 易云双芯</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 18 Apr 2023 09:34:50 +0800</lastBuildDate><atom:link href="https://yyits.top/categories/%E5%8D%87%E7%BA%A7%E5%8C%85/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>V1.2.0发布</title>
+      <link>https://yyits.top/posts/v1.2.0%E5%8F%91%E5%B8%83/</link>
+      <pubDate>Tue, 18 Apr 2023 09:34:50 +0800</pubDate>
+      
+      <guid>https://yyits.top/posts/v1.2.0%E5%8F%91%E5%B8%83/</guid>
+      <description>1.修复了有晚启动配置时可能会引起倒计时跳变的问题&lt;br/&gt;2.修复车道控制灯组会被方向按键所控制的问题</description>
+    </item>
+    
+    <item>
+      <title>V1.1.6发布</title>
+      <link>https://yyits.top/posts/v1.1.6%E5%8F%91%E5%B8%83/</link>
+      <pubDate>Tue, 28 Feb 2023 16:12:17 +0800</pubDate>
+      
+      <guid>https://yyits.top/posts/v1.1.6%E5%8F%91%E5%B8%83/</guid>
+      <description>1.改进了触摸屏的配置界面&lt;br/&gt;2.修复了车道控制以及按键控制的一些控制逻辑&lt;br/&gt;3.修复了一些场景下倒计时的展示问题</description>
+    </item>
+    
+    <item>
+      <title>V1.1.5发布</title>
+      <link>https://yyits.top/posts/v1.1.5%E5%8F%91%E5%B8%83/</link>
+      <pubDate>Thu, 24 Nov 2022 09:15:05 +0800</pubDate>
+      
+      <guid>https://yyits.top/posts/v1.1.5%E5%8F%91%E5%B8%83/</guid>
+      <description>1.修复了半感应控制步进有误的问题&lt;br/&gt;2.新增了8个按键小型遥控器的支持</description>
+    </item>
+    
+    <item>
+      <title>V1.1.4发布</title>
+      <link>https://yyits.top/posts/v1.1.4%E5%8F%91%E5%B8%83/</link>
+      <pubDate>Tue, 18 Oct 2022 21:53:32 +0800</pubDate>
+      
+      <guid>https://yyits.top/posts/v1.1.4%E5%8F%91%E5%B8%83/</guid>
+      <description>1.修复了订阅历史方案会导致websocket断开的问题&lt;br/&gt;2.优化了相位跳转到过渡期以及相位截断的执行逻辑</description>
+    </item>
+    
+  </channel>
+</rss>

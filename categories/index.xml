@@ -2,9 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 易云双芯</title>
-    <link>https://jackyzjk.github.io/categories/</link>
+    <link>https://yyits.top/categories/</link>
     <description>Recent content in Categories on 易云双芯</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://jackyzjk.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Tue, 18 Apr 2023 09:34:50 +0800</lastBuildDate><atom:link href="https://yyits.top/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>升级包</title>
+      <link>https://yyits.top/categories/%E5%8D%87%E7%BA%A7%E5%8C%85/</link>
+      <pubDate>Tue, 18 Apr 2023 09:34:50 +0800</pubDate>
+      
+      <guid>https://yyits.top/categories/%E5%8D%87%E7%BA%A7%E5%8C%85/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>使用说明</title>
+      <link>https://yyits.top/categories/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</link>
+      <pubDate>Thu, 13 Apr 2023 15:23:30 +0800</pubDate>
+      
+      <guid>https://yyits.top/categories/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
